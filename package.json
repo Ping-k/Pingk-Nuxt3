@@ -9,10 +9,14 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@types/prettier": "^2.7.2",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.10.0",
-    "nuxt": "^3.3.3"
+    "nuxt": "^3.3.3",
+    "prettier": "^2.8.7"
   }
 }
