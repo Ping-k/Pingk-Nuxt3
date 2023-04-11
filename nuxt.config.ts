@@ -4,8 +4,11 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-10 16:25:27
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-11 09:09:49
+ * @LastEditTime: 2023-04-11 14:19:24
  */
+
+import { locales } from './locales/index'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
@@ -20,5 +23,13 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n'],
+  i18n: {
+    // add `vueI18n` option to `@nuxtjs/i18n` module options
+    vueI18n: {
+      legacy: false,
+      locale: 'en',
+      messages: locales,
+    },
+  },
 })
