@@ -4,7 +4,7 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-10 16:25:27
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-11 14:19:24
+ * @LastEditTime: 2023-04-11 15:30:39
  */
 
 import { locales } from './locales/index'
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@pinia/nuxt',],
   i18n: {
     // add `vueI18n` option to `@nuxtjs/i18n` module options
     vueI18n: {
