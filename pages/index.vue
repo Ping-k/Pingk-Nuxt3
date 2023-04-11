@@ -10,6 +10,9 @@
                 <NuxtLink to="/">首页</NuxtLink>
             </li>
             <li class="float-left mx-[20px]">
+                <NuxtLink to="/about">关于</NuxtLink>
+            </li>
+            <li class="float-left mx-[20px]">
                 <NuxtLink to="/user/1">用户</NuxtLink>
             </li>
             <li class="float-left mx-[20px]">

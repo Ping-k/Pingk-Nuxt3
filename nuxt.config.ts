@@ -10,6 +10,8 @@
 export default defineNuxtConfig({
   app: {
     head: {
+      charset: 'utf-8',
+      viewport: 'width=500, initial-scale=1',
       title: 'Pingk-Nuxt',
       meta: [
         { name: 'description', content: 'pingk nuxt test' },
