@@ -4,8 +4,10 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-10 16:25:27
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-11 15:30:39
+ * @LastEditTime: 2023-04-12 13:13:26
  */
+
+// import  i18n  from "./plugins/i18n";
 
 import { locales } from './locales/index'
 
@@ -23,13 +25,13 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@pinia/nuxt',],
-  i18n: {
-    // add `vueI18n` option to `@nuxtjs/i18n` module options
-    vueI18n: {
-      legacy: false,
-      locale: 'en',
-      messages: locales,
-    },
-  },
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@pinia/nuxt'],
+  // i18n: {
+  //   // add `vueI18n` option to `@nuxtjs/i18n` module options
+  //   vueI18n: {
+  //     legacy: false,
+  //     locale: 'en-US',
+  //     messages: locales,
+  //   },
+  // },
 })
