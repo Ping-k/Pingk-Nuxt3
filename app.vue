@@ -69,8 +69,9 @@ onMounted(() => {
 }
 
 /**
-过渡页效果
-*/
+ * 过渡页效果，page是动画名称，需对应nuxt.config.ts配置中pageTransition.name一致。
+ * 可配置多个：https://nuxt.com.cn/docs/getting-started/transitions#%E5%85%A8%E5%B1%80%E8%AE%BE%E7%BD%AE
+ */
 .page-enter-active,
 .page-leave-active {
   transition: all 0.3s;

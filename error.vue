@@ -4,16 +4,21 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-17 14:01:37
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-17 15:16:56
+ * @LastEditTime: 2023-04-17 17:36:27
 -->
 <template>
-    <div>404</div>
-    <h2>
+    <h2 class="text-center my-8">
         <NuxtLink to="/">Back to Home</NuxtLink>
     </h2>
-    <img src="/images/1.png" alt="404" />
-    <img src="/images/404.jpg" alt="404" />
-    <img src="~/assets/images/404.png" alt="404" />
+    <div v-if="error.statusCode === 404">
+        <div>404</div>
+        <img src="/images/1.png" alt="404" />
+        <img src="/images/404.jpg" alt="404" />
+        <img src="~/assets/images/404.png" alt="404" />
+    </div>
+    <div v-if="error.statusCode === 500">
+        <div>500</div>
+    </div>
     <pre>错误信息：{{ error }}</pre>
 </template>
 <script setup>
@@ -29,20 +34,11 @@ useHead({
 })
 
 /**
- * nuxt3错误页面前移
+ * nuxt3错误页面
  * https://nuxt.com.cn/docs/migration/pages-and-layouts#%E8%BF%81%E7%A7%BB-1
  */
-const orderNumber = ref(560003)
-// 所以这里走api代理无效
-const detail = await useFetch('apis/cservices/ordertrack?num=' + orderNumber.value)
-console.log(detail)
-
 const error = useError();
 console.log(error)
-
-const someErrorLogger = () => {
-    return error.message;
-}
 
 </script>
 <style lang="scss" scoped>

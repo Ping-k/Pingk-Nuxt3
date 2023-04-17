@@ -26,6 +26,11 @@
 import { useDark, useToggle } from '@vueuse/core'
 // import AppAlert from '../components/AppAlert.vue'
 
+// 鉴权是否登录
+// definePageMeta({
+//     middleware: 'auth'
+// })
+
 const data = await useFetch('/api/getData')
 const users = await useFetch('/api/getUser')
 const test = await useFetch('/api/test')

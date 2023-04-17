@@ -4,13 +4,16 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-11 13:42:10
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-14 15:14:14
+ * @LastEditTime: 2023-04-17 17:38:34
 -->
 <template>
     <div class="container mx-auto">
         <ul class="text-blue-500 p-[30px]">
             <li class="float-left mx-[20px]">
                 <NuxtLink to="/">首页</NuxtLink>
+            </li>
+            <li class="float-left mx-[20px]">
+                <NuxtLink to="/login">登录</NuxtLink>
             </li>
             <li class="float-left mx-[20px]">
                 <NuxtLink to="/about">关于</NuxtLink>
