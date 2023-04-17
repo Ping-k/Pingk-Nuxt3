@@ -4,7 +4,7 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-11 13:42:10
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-11 13:55:48
+ * @LastEditTime: 2023-04-14 15:14:14
 -->
 <template>
     <div class="container mx-auto">
@@ -19,7 +19,8 @@
                 <NuxtLink to="/user/1">用户</NuxtLink>
             </li>
             <li class="float-left mx-[20px]">
-                <NuxtLink to="/detail?id=11">详情</NuxtLink>
+                <!-- 路由index不用写 -->
+                <NuxtLink to="/order">详情</NuxtLink>
             </li>
         </ul>
     </div>

@@ -14,10 +14,14 @@
 
     <AppHeader />
 
-    <p>{{ $t('welcome') }}</p>
-    <div class="container mx-auto">
-      <NuxtPage></NuxtPage>
-    </div>
+
+    <NuxtLayout>
+      <NuxtLoadingIndicator :color="'red'" :height="10" :duration="3000" >加载中</NuxtLoadingIndicator>
+      <p>{{ $t('welcome') }}</p>
+      <div class="container mx-auto">
+        <NuxtPage></NuxtPage>
+      </div>
+    </NuxtLayout>
 
     <AppFooter />
 
@@ -26,8 +30,8 @@
 
 <script setup>
 import { useWebsiteStore } from '@/stores'
-import AppHeader from './components/AppHeader.vue'
-import AppFooter from './components/AppFooter.vue'
+// import AppHeader from './components/AppHeader.vue'
+// import AppFooter from './components/AppFooter.vue'
 // import { storeToRefs } from 'pinia';
 
 const useWebsite = useWebsiteStore();
