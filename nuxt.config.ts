@@ -4,7 +4,7 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-10 16:25:27
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-17 10:31:03
+ * @LastEditTime: 2023-04-17 11:02:51
  */
 
 // import  i18n  from "./plugins/i18n";
@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   //     messages: locales,
   //   },
   // },
-  // 代理
+  // 代理 https://nitro.unjs.io/config/
   nitro: {
     devProxy: {
         '/apis': {
