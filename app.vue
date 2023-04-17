@@ -16,7 +16,7 @@
 
 
     <NuxtLayout>
-      <NuxtLoadingIndicator :color="'red'" :height="10" :duration="3000" >加载中</NuxtLoadingIndicator>
+      <NuxtLoadingIndicator :color="'red'" :height="10" :duration="3000">加载中</NuxtLoadingIndicator>
       <p>{{ $t('welcome') }}</p>
       <div class="container mx-auto">
         <NuxtPage></NuxtPage>
@@ -66,5 +66,23 @@ onMounted(() => {
 .test {
   color: red;
   font-size: 20px;
+}
+
+/**
+过渡页效果
+*/
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s;
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateX(20px);
 }
 </style>

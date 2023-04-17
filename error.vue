@@ -4,13 +4,16 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-17 14:01:37
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-17 14:49:19
+ * @LastEditTime: 2023-04-17 15:16:56
 -->
 <template>
     <div>404</div>
     <h2>
         <NuxtLink to="/">Back to Home</NuxtLink>
     </h2>
+    <img src="/images/1.png" alt="404" />
+    <img src="/images/404.jpg" alt="404" />
+    <img src="~/assets/images/404.png" alt="404" />
     <pre>错误信息：{{ error }}</pre>
 </template>
 <script setup>
@@ -42,4 +45,14 @@ const someErrorLogger = () => {
 }
 
 </script>
-<style lang="scss"></style>
+<style lang="scss" scoped>
+div {
+    color: $color;
+    @include title;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+</style>

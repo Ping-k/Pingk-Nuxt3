@@ -40,3 +40,9 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+```
+Nuxt使用两个目录来处理像stylesheets, fonts 或 images这样的资产。
+public/目录内容原样提供给服务器根目录。
+assets/目录按惯例包含你想要构建工具(Vite或webpack)处理的每个资产。
+```
