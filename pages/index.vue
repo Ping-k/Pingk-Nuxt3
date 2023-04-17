@@ -35,5 +35,10 @@ console.log(test2.data.value)
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
+
+const runtimeConfig = useRuntimeConfig()
+console.log(runtimeConfig)
+const appConfig = useAppConfig()
+console.log(appConfig)
 </script>
 <style lang="scss"></style>

@@ -4,7 +4,7 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-10 16:25:27
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-17 15:27:51
+ * @LastEditTime: 2023-04-17 15:47:14
  */
 
 // import  i18n  from "./plugins/i18n";
@@ -26,6 +26,15 @@ export default defineNuxtConfig({
     },
     // 页面切换过渡效果：https://nuxt.com.cn/docs/getting-started/transitions#%E8%BF%87%E6%B8%A1
     pageTransition: { name: 'page', mode: 'out-in' },
+  },
+  // 环境变量、私有令牌配置：https://nuxt.com.cn/docs/getting-started/configuration#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%92%8C%E7%A7%81%E6%9C%89%E4%BB%A4%E7%89%8C
+  runtimeConfig: {
+    // The private keys which are only available server-side
+    apiSecret: '123',
+    // Keys within public are also exposed client-side
+    public: {
+      apiBase: '/api'
+    }
   },
   vite: {
     // 公共样式：https://nuxt.com.cn/docs/getting-started/assets#%E7%A4%BA%E4%BE%8B-2

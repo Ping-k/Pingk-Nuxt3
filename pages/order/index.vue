@@ -4,7 +4,7 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-11 10:01:35
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-17 10:31:31
+ * @LastEditTime: 2023-04-17 15:47:58
 -->
 <template>
     <div>
@@ -26,6 +26,17 @@
     </div>
 </template>
 <script setup>
+
+useHead({
+    title: '订单 Pingk-Nuxt',
+    meta: [
+        { name: 'description', content: '订单' }
+    ],
+    bodyAttrs: {
+        class: '订单'
+    },
+    script: [{ children: 'console.log(\'订单\')' }]
+})
 
 const route = useRoute()
 console.log(route.params)
