@@ -7,19 +7,21 @@
  * @LastEditTime: 2023-04-17 17:36:27
 -->
 <template>
-    <h2 class="text-center my-8">
-        <NuxtLink to="/">Back to Home</NuxtLink>
-    </h2>
-    <div v-if="error.statusCode === 404">
-        <div>404</div>
-        <img src="/images/1.png" alt="404" />
-        <img src="/images/404.jpg" alt="404" />
-        <img src="~/assets/images/404.png" alt="404" />
+    <div>
+        <h2 class="text-center my-8">
+            <NuxtLink to="/">Back to Home</NuxtLink>
+        </h2>
+        <div v-if="error.statusCode === 404">
+            <div>404</div>
+            <img src="/images/1.png" alt="404" />
+            <img src="/images/404.jpg" alt="404" />
+            <img src="~/assets/images/404.png" alt="404" />
+        </div>
+        <div v-if="error.statusCode === 500">
+            <div>500</div>
+        </div>
+        <pre>错误信息：{{ error }}</pre>
     </div>
-    <div v-if="error.statusCode === 500">
-        <div>500</div>
-    </div>
-    <pre>错误信息：{{ error }}</pre>
 </template>
 <script setup>
 useHead({

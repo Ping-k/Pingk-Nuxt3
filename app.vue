@@ -24,7 +24,6 @@
     </NuxtLayout>
 
     <AppFooter />
-
   </div>
 </template>
 

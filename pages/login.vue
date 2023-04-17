@@ -4,14 +4,15 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-17 15:55:35
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-17 16:54:18
+ * @LastEditTime: 2023-04-17 17:45:23
 -->
 <template>
     <div>
-        登录
+        <div> 登录 </div>
+        <button type="button" @click="login">登录</button>
     </div>
-    <button type="button" @click="login">登录</button>
 </template>
+
 <script setup>
 
 const login = async () => {

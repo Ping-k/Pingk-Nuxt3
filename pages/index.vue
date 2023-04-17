@@ -17,8 +17,6 @@
         <pre>{{ data }}</pre>
         <p>/api/getUser: </p>
         <pre>{{ users }}</pre>
-
-
     </div>
 </template>
 

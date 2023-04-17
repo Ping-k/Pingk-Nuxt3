@@ -46,3 +46,7 @@ Nuxt使用两个目录来处理像stylesheets, fonts 或 images这样的资产�
 public/目录内容原样提供给服务器根目录。
 assets/目录按惯例包含你想要构建工具(Vite或webpack)处理的每个资产。
 ```
+```
+Nuxt3组件及pages页面中Vue根节点只能有一个，不能多个，多个Nuxt路由解析异常，Vue3官方是支持多根节点的，但是Nuxt3是根据pages目录自动生成的router所以不支持多级根节点。
+登录页面login多根节点导致切换路由过渡动画报错。
+```
