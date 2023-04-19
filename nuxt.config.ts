@@ -4,7 +4,7 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-10 16:25:27
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-17 15:47:14
+ * @LastEditTime: 2023-04-19 16:03:43
  */
 
 // import  i18n  from "./plugins/i18n";
@@ -46,7 +46,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@pinia/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@pinia/nuxt', '@nuxt/devtools',],
   // i18n: {
   //   // add `vueI18n` option to `@nuxtjs/i18n` module options
   //   vueI18n: {
@@ -64,4 +64,11 @@ export default defineNuxtConfig({
       },
     },
   },
+  devtools: {
+    // Enable devtools (default: true)
+    enabled: true,
+    // VS Code Server options
+    vscode: {},
+    // ...other options
+  }
 })
