@@ -1,8 +1,16 @@
+<!--
+ * @Descripttion: 
+ * @version: v0.0.1
+ * @Author: ZhouYanPing
+ * @Date: 2023-04-10 16:25:27
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2023-04-19 17:15:44
+-->
 <template>
   <div>
     <!-- <div class="test">hello scss</div>
     <div class="text-red-500">hello Nuxt3</div>
-    <h1 class="text-4xl text-green-700 text-center font-semibold">Hello Tailwind</h1> -->
+    <h1 class="text-4xl font-semibold text-center text-green-700">Hello Tailwind</h1> -->
     <!-- <NuxtWelcome /> -->
     <form class="float-right">
       <select v-model="locale" @change="changeLocale">
@@ -12,18 +20,18 @@
     </form>
     语言：{{ locale }}
 
-    <AppHeader />
+    <!-- <AppHeader /> -->
 
 
     <NuxtLayout>
       <NuxtLoadingIndicator :color="'red'" :height="10" :duration="3000">加载中</NuxtLoadingIndicator>
-      <p>{{ $t('welcome') }}</p>
+      <p>App：{{ $t('welcome') }}</p>
       <div class="container mx-auto">
         <NuxtPage></NuxtPage>
       </div>
     </NuxtLayout>
 
-    <AppFooter />
+    <!-- <AppFooter /> -->
   </div>
 </template>
 

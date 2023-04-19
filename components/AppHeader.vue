@@ -4,7 +4,7 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-11 13:42:10
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-17 17:38:34
+ * @LastEditTime: 2023-04-19 16:43:22
 -->
 <template>
     <div class="container mx-auto">
@@ -24,6 +24,12 @@
             <li class="float-left mx-[20px]">
                 <!-- 路由index不用写 -->
                 <NuxtLink to="/order">详情</NuxtLink>
+            </li>
+            <li class="float-left mx-[20px]">
+                <NuxtLink to="/layout">pingk布局</NuxtLink>
+            </li>
+            <li class="float-left mx-[20px]">
+                <NuxtLink to="/layout2">pingk布局2</NuxtLink>
             </li>
         </ul>
     </div>
