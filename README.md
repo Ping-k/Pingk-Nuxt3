@@ -50,3 +50,25 @@ assets/目录按惯例包含你想要构建工具(Vite或webpack)处理的每个
 Nuxt3组件及pages页面中Vue根节点只能有一个，不能多个，多个Nuxt路由解析异常，Vue3官方是支持多根节点的，但是Nuxt3是根据pages目录自动生成的router所以不支持多级根节点。
 登录页面login多根节点导致切换路由过渡动画报错。
 ```
+
+```
+nuxi 命令官方文档：https://nuxt.com.cn/docs/api/commands/dev
+
+```
+
+```
+部署
+1、打包
+yarn build
+2、pm2部署
+yarn deploy-pm2
+```
+```
+静态托管-预渲染
+yarn generate
+generate 命令预呈现应用程序的每个路由，并将结果存储在普通的HTML文件中，您可以将其部署到任何静态托管服务上。
+该命令会触发nuxi build 命令，prerender 参数设置为true。对于每个页面，Nuxt使用爬虫程序生成相应的HTML和有效负载文件。生成的文件将在.output/public的目录。并且生产dist目录，可直接部署。
+```
+```
+preview 命令启动一个服务器来预览你的Nuxt应用程序。
+```
