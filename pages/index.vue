@@ -2,7 +2,8 @@
     <div>
         <div class="test">hello scss</div>
         <div class="text-red-500">hello Nuxt3</div>
-        <h1 class="text-center text-4xl font-semibold text-green-700">
+        登录用户：{{ userInfo }}
+        <h1 class="text-4xl font-semibold text-center text-green-700">
             Hello Tailwind
         </h1>
 
@@ -43,5 +44,7 @@ const runtimeConfig = useRuntimeConfig()
 console.log(runtimeConfig)
 const appConfig = useAppConfig()
 console.log(appConfig)
+
+const userInfo = useState('userInfo') || {}
 </script>
 <style lang="scss"></style>

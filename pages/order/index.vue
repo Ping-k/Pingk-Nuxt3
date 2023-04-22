@@ -4,7 +4,7 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-11 10:01:35
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-17 15:47:58
+ * @LastEditTime: 2023-04-21 10:16:34
 -->
 <template>
     <div>
@@ -13,8 +13,8 @@
         <br />
         <br />
 
-        <input type="text" v-model="orderNumber">
-        <button @click="getDetail">查询</button>
+        <input class="p-2 border-2 border-solid border-light-blue-500" type="text" v-model="orderNumber">
+        <button class="p-3 px-6 mx-4 text-white rounded bg--600 bg-amber-600" @click="getDetail">查询</button>
 
         <p>集運包裹單号"{{ orderNumber }}"追蹤結果</p>
         <ul>
