@@ -33,8 +33,8 @@ export default defineNuxtConfig({
     apiSecret: '123',
     // Keys within public are also exposed client-side
     public: {
-      apiBase: '/api'
-    }
+      apiBase: '/api',
+    },
   },
   vite: {
     // 公共样式：https://nuxt.com.cn/docs/getting-started/assets#%E7%A4%BA%E4%BE%8B-2
@@ -46,7 +46,12 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@pinia/nuxt', '@nuxt/devtools',],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/i18n',
+    '@pinia/nuxt',
+    '@nuxt/devtools',
+  ],
   // i18n: {
   //   // add `vueI18n` option to `@nuxtjs/i18n` module options
   //   vueI18n: {
@@ -70,5 +75,7 @@ export default defineNuxtConfig({
     // VS Code Server options
     vscode: {},
     // ...other options
-  }
+  },
+  // 关闭问卷调查数据收集
+  telemetry: false,
 })
