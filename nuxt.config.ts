@@ -4,7 +4,7 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-10 16:25:27
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-19 16:03:43
+ * @LastEditTime: 2023-04-22 11:52:14
  */
 
 // import  i18n  from "./plugins/i18n";
@@ -23,6 +23,16 @@ export default defineNuxtConfig({
         { name: 'keywords', content: 'nuxt' },
         { name: 'applicable-device', content: 'pc, mobile' }, // 移动pc适配
       ],
+      link: [
+        { rel: 'stylesheet', href: './static/css/s.css' },
+        { rel: 'stylesheet', href: './static/css/global.css' },
+        { rel: 'stylesheet', href: './static/css/scrollbar.css' },
+      ],
+      script: [
+        { src: './static/js/core.js' },
+        { src: './static/js/s.js' },
+        { src: './static/js/ui.js' },
+      ],
     },
     // 页面切换过渡效果：https://nuxt.com.cn/docs/getting-started/transitions#%E8%BF%87%E6%B8%A1
     pageTransition: { name: 'page', mode: 'out-in' },
@@ -36,6 +46,11 @@ export default defineNuxtConfig({
       apiBase: '/api',
     },
   },
+  // css: [
+  //   './static/css/s.css',
+  //   './static/css/scrollbar.css',
+  //   './static/css/global.css',
+  // ],
   vite: {
     // 公共样式：https://nuxt.com.cn/docs/getting-started/assets#%E7%A4%BA%E4%BE%8B-2
     css: {

@@ -4,7 +4,7 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-10 16:25:27
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-19 17:15:44
+ * @LastEditTime: 2023-04-22 18:12:35
 -->
 <template>
   <div>
@@ -12,23 +12,23 @@
     <div class="text-red-500">hello Nuxt3</div>
     <h1 class="text-4xl font-semibold text-center text-green-700">Hello Tailwind</h1> -->
     <!-- <NuxtWelcome /> -->
-    <form class="float-right">
+    <!-- <form class="float-right">
       <select v-model="locale" @change="changeLocale">
         <option value="en-US">en</option>
         <option value="zh-CN">zh</option>
       </select>
     </form>
-    语言：{{ locale }}
+    语言：{{ locale }} -->
 
     <!-- <AppHeader /> -->
 
 
     <NuxtLayout>
       <NuxtLoadingIndicator :color="'red'" :height="10" :duration="3000">加载中</NuxtLoadingIndicator>
-      <p>App：{{ $t('welcome') }}</p>
-      <div class="container mx-auto">
+      <!-- <p>App：{{ $t('welcome') }}</p>
+      <div class="container mx-auto"> -->
         <NuxtPage></NuxtPage>
-      </div>
+      <!-- </div> -->
     </NuxtLayout>
 
     <!-- <AppFooter /> -->
