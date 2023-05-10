@@ -4,14 +4,14 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-22 11:07:53
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-22 21:23:30
+ * @LastEditTime: 2023-05-10 10:53:16
 -->
 
 <template>
     <div>
         <div class="header" id="header">
             <div class="inside">
-                <a href="" class="logo"><img src="static/picture/7.png"></a>
+                <a href="" class="logo"><img src="/static/picture/7.png"></a>
                 <div class="navigation" id="navigation">
                     <div class="item"><a href="" class="active">首页</a></div>
                     <div class="item">
@@ -64,14 +64,14 @@
         </div> <i id="func" data="index"></i>
         <div class="banner swiper-container swiper-container-initialized swiper-container-horizontal" id="banner">
             <div class="swiper-wrapper" style="transform: translate3d(-3843px, 0px, 0px); transition-duration: 0ms;">
-                <div class="swiper-slide item laptop" style="width: 1281px;"> <img src="static/picture/53.jpg"
+                <div class="swiper-slide item laptop" style="width: 1281px;"> <img src="/static/picture/53.jpg"
                         class="itemImage">
                     <div class="text">
                         <!--p class="itemText"></p-->
                         <!--p class="itemTextEx">62.58</p-->
                     </div>
                 </div>
-                <div class="swiper-slide item laptop" style="width: 1281px;"> <img src="static/picture/26.jpg"
+                <div class="swiper-slide item laptop" style="width: 1281px;"> <img src="/static/picture/26.jpg"
                         class="itemImage">
                     <div class="text">
                         <!--p class="itemText"></p-->
@@ -79,51 +79,51 @@
                     </div>
                 </div>
                 <div class="swiper-slide item laptop swiper-slide-prev" style="width: 1281px;"> <img
-                        src="static/picture/51.jpg" class="itemImage">
+                        src="/static/picture/51.jpg" class="itemImage">
                     <div class="text">
                         <!--p class="itemText"></p-->
                         <!--p class="itemTextEx">物农网</p-->
                     </div>
                 </div>
                 <div class="swiper-slide item laptop swiper-slide-active" style="width: 1281px;"> <img
-                        src="static/picture/61.jpg" class="itemImage">
+                        src="/static/picture/61.jpg" class="itemImage">
                     <div class="text">
                         <!--p class="itemText"></p-->
                         <!--p class="itemTextEx">以信为本  卓越共成</p-->
                     </div>
                 </div>
                 <div class="swiper-slide item laptop swiper-slide-next" style="width: 1281px;"> <img
-                        src="static/picture/131.jpg" class="itemImage">
+                        src="/static/picture/131.jpg" class="itemImage">
                     <div class="text">
                         <!--p class="itemText">DACHENGXIN&nbsp;&nbsp;&nbsp;CAPITAL</p-->
                         <!--p class="itemTextEx">和而不同</p-->
                     </div>
                 </div>
-                <div class="swiper-slide item mobile"> <img src="static/picture/132.jpg" class="itemImage">
+                <div class="swiper-slide item mobile"> <img src="/static/picture/132.jpg" class="itemImage">
                     <div class="text">
                         <!--p class="itemText"></p-->
                         <!--p class="itemTextEx">21313</p-->
                     </div>
                 </div>
-                <div class="swiper-slide item mobile"> <img src="static/picture/62.jpg" class="itemImage">
+                <div class="swiper-slide item mobile"> <img src="/static/picture/62.jpg" class="itemImage">
                     <div class="text">
                         <!--p class="itemText"></p-->
                         <!--p class="itemTextEx">美物</p-->
                     </div>
                 </div>
-                <div class="swiper-slide item mobile"> <img src="static/picture/101.jpg" class="itemImage">
+                <div class="swiper-slide item mobile"> <img src="/static/picture/101.jpg" class="itemImage">
                     <div class="text">
                         <!--p class="itemText"></p-->
                         <!--p class="itemTextEx">汇元</p-->
                     </div>
                 </div>
-                <div class="swiper-slide item mobile"> <img src="static/picture/151.jpg" class="itemImage">
+                <div class="swiper-slide item mobile"> <img src="/static/picture/151.jpg" class="itemImage">
                     <div class="text">
                         <!--p class="itemText"></p-->
                         <!--p class="itemTextEx">和而不同</p-->
                     </div>
                 </div>
-                <div class="swiper-slide item mobile"> <img src="static/picture/301.jpg" class="itemImage">
+                <div class="swiper-slide item mobile"> <img src="/static/picture/301.jpg" class="itemImage">
                     <div class="text">
                         <!--p class="itemText"></p-->
                         <!--p class="itemTextEx">222</p-->
@@ -158,7 +158,7 @@
                         </p>
                         <p class="text_2">since<span>2014</span></p>
                     </div>
-                    <div class="right"> <img src="static/picture/tex_0.png"> <a href="about.html" class="more">more</a>
+                    <div class="right"> <img src="/static/picture/tex_0.png"> <a href="about.html" class="more">more</a>
                     </div>
                 </div>
             </div>
@@ -176,7 +176,7 @@
                     </div>
                 </div>
                 <div class="content">
-                    <div class="item"> <img src="static/picture/news_0.jpg" class="itemImage">
+                    <div class="item"> <img src="/static/picture/news_0.jpg" class="itemImage">
                         <div class="text">
                             <p class="itemText">实体科技</p>
                             <p class="itemTextEx ex">实业兴则经济兴，科技强则国家强，<br>
@@ -185,14 +185,14 @@
                             <p class="itemTextEx" style="min-height: 46px;"><span>业务范围：</span>大健康医疗、新零售、物流配送、高新智能科技、新能源</p>
                         </div>
                     </div>
-                    <div class="item"> <img src="static/picture/news_1.jpg" class="itemImage">
+                    <div class="item"> <img src="/static/picture/news_1.jpg" class="itemImage">
                         <div class="text">
                             <p class="itemText">资产管理</p>
                             <p class="itemTextEx ex">紧随时代脉搏，洞悉客户需求，从资产诊断、配置规划、家族财富传承等领域提供全面而个性化的管理服务。帮助客户实现资产的保值、增值。</p>
                             <p class="itemTextEx" style="min-height: 46px;"><span>业务范围：</span>财务诊断、资产配置、资产管理、资产传承、国内外保险</p>
                         </div>
                     </div>
-                    <div class="item"> <img src="static/picture/news_2.jpg" class="itemImage">
+                    <div class="item"> <img src="/static/picture/news_2.jpg" class="itemImage">
                         <div class="text">
                             <p class="itemText">投资管理</p>
                             <p class="itemTextEx ex">精准把握国家政策和方向，深刻理解产业发展趋势和方向，<br>
@@ -228,7 +228,7 @@
                             <p class="itemText">服务客户</p>
                             <p class="itemTextEx">To serve our customers</p>
                         </div>
-                        <img src="static/picture/pic_0.jpg" class="itemImage">
+                        <img src="/static/picture/pic_0.jpg" class="itemImage">
                     </div>
                     <div class="item">
                         <p class="number">02</p>
@@ -237,7 +237,7 @@
                             <p class="itemText">关爱员工</p>
                             <p class="itemTextEx">TO TAKE CARE OF STAFFS</p>
                         </div>
-                        <img src="static/picture/pic_1.jpg" class="itemImage">
+                        <img src="/static/picture/pic_1.jpg" class="itemImage">
                     </div>
                     <div class="item">
                         <p class="number">03</p>
@@ -246,7 +246,7 @@
                             <p class="itemText">回馈社会</p>
                             <p class="itemTextEx">To give back to society</p>
                         </div>
-                        <img src="static/picture/pic_2.jpg" class="itemImage">
+                        <img src="/static/picture/pic_2.jpg" class="itemImage">
                     </div>
                     <div class="staticText">
                         <p class="itemText">RESPONSIBILITY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DACHENGXIN CAPITAL<br>责任达城信</p>
@@ -273,7 +273,7 @@
                 <div class="content">
                     <div class="left">
                         <div class="bigItem"> <a href="news-889.html" class="itemImage"><img
-                                    src="static/picture/102.jpg"></a>
+                                    src="/static/picture/102.jpg"></a>
                             <div class="text nf">
                                 <div class="t"> <a href="news-889.html" class="itemText">中共中央、国务院发布重要文件！信息量巨大</a> <span
                                         class="date">2023-02-13</span> </div>
@@ -338,19 +338,19 @@
                 </p>
             </div>
         </div>
-        <!-- <script type="text/javascript" src="static/js/core.js"></script>
-        <script type="text/javascript" src="static/js/s.js"></script>
-        <script type="text/javascript" src="static/js/ui.js"></script> -->
+        <!-- <script type="text/javascript" src="/static/js/core.js"></script>
+        <script type="text/javascript" src="/static/js/s.js"></script>
+        <script type="text/javascript" src="/static/js/ui.js"></script> -->
         <div class="asid_share">
             <div class="asid_top_box" id="backtotop"></div>
             <div class="asid_share_box">
                 <div class="asid_share_erweima">
                     <div class="erweima1">
-                        <img src="static/picture/dingyuehao.jpg">
+                        <img src="/static/picture/dingyuehao.jpg">
                         <p>达城信资本订阅号</p>
                     </div>
                     <div class="erweima2">
-                        <img src="static/picture/fuwuhao.jpg">
+                        <img src="/static/picture/fuwuhao.jpg">
                         <p>达城信资本集团服务号</p>
                     </div>
                 </div>
