@@ -4,7 +4,7 @@
  * @Author: ZhouYanPing
  * @Date: 2023-04-19 16:43:52
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2023-04-21 10:43:58
+ * @LastEditTime: 2023-05-11 17:05:55
 -->
 
 <template>
@@ -19,6 +19,7 @@
 definePageMeta({
     layout: false, // 关闭默认布局
 });
+    // throw new Error('Something went wrong')
 
 const routerError = () => {
     navigateTo('/not-found')
@@ -27,10 +28,13 @@ const apiNotFund = async () => {
     const test = await useFetch('/api/test404')
 }
 const api404 = async () => {
-    const test = await useFetch('/api/test')
+    // const test = await useFetch('/api/test')
+    throw createError({ statusCode: 404, statusMessage: "Page Not Found 中间件" });
 }
 const api500 = async () => {
-    const test = await useFetch('/api/test')
+    // const test = await useFetch('/api/test')
+    // throw createError({ statusCode: 500, statusMessage: "Page Error 中间件" });
+    throw new Error('Something went wrong')
 }
 </script>
 <style lang="scss"></style>
